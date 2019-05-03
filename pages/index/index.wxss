@@ -1,0 +1,178 @@
+/* 自动轮播图容器 */
+.swiper-container {
+  width: 100%;
+  position: relative;
+}
+/* 自定义轮播图索引点阵 */
+.dots {
+  width: 40%;
+  position: absolute;
+  bottom: 3%;
+  right: 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+/* 点阵中的点 */
+.dot {
+  width: 13%;
+  text-align: center;
+  background-color: lightskyblue;
+  border-radius: 50%;
+}
+/* 当前索引被选中时 */
+.show {
+  background-color: lightsalmon;
+}
+/* 轮播图 */
+.roll-img {
+  width: 100%;
+  text-align: center;
+}
+/* 轮播图中的容器，内涵图片和介绍文字 */
+.roll-view {
+  width: 100%;
+  height: 100%;
+}
+/* 自定义tab选项卡 */
+.tab {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(50, 50, 50, 0.75);
+  display: flex;
+  display: -webkit-flex;
+}
+/* tab选项卡中的每个选项 */
+.tab view {
+  width: 33%;
+  text-align: center;
+}
+/* 选项卡被选中 */
+.tab-border {
+  border-bottom-style: solid;
+}
+/* 页脚（此处没有用到，暂时保留） */
+.footer image {
+  width: 33%;
+  height: 30px;
+}
+.slide-view {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 3rpx 3rpx 6rpx rgba(0, 0, 0, 0.5);
+  min-height: 200rpx;
+  margin-top: 20rpx;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slide-view image {
+  width: 35%;
+}
+.slide-view-info {
+  font-size: 30rpx;
+  width: 57%;
+  text-indent: 20rpx;
+  padding-left: 5%;
+  border-left: solid 1rpx black;
+}
+/* for 100px - 500px */
+@media screen and (min-width: 100px) and (max-width: 500px) {
+  /* 给header四周边留些空白 */
+  .header {
+    padding: 1%;
+  }/* 另外给header搜索框一点小小的更改 */
+  .header-search {
+    border-radius: 50rpx;
+    padding-top: 1.5%;
+  }
+  .header-search-input {
+    padding-left: 2.5%;
+  }/* 选项卡下边框宽度 */
+  .tab {
+    border-bottom-width: 1rpx;
+  }
+}
+/* for 500px or more */
+@media screen and (min-width: 500px) {
+  /* 给header四周边留些空白 */
+  .header {
+    padding: 0.5%;
+  }/* 另外给header搜索框一点小小的更改 */
+  .header-search {
+    padding-bottom: 0.5%;
+    border-radius: 100rpx;
+  }
+  .header-search-input {
+    padding-left: 3.5%;
+    font-size: 75%;
+  }
+}
+/* for 320px or less */
+@media screen and (max-width: 320px) {
+  /* 轮播图中的图片占比 */
+  .roll-view image {
+    height: 85%;
+  }/* 轮播图中的文字占比 */
+  .roll-view view {
+    height: 15%;
+    font-size: 85%;
+  }/* 点阵文字大小设置 */
+  .dots {
+    font-size: 85%;
+  }
+}
+/* for 320px - 768px */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* 轮播图中的图片占比 */
+  .roll-view image {
+    height: 80%;
+  }/* 轮播图中的文字占比 */
+  .roll-view view {
+    height: 20%;
+    font-size: 85%;
+  }/* 点阵 */
+  .dots {
+    font-size: 85%;
+  }
+}
+/* for 768px - 835px */
+@media screen and (min-width: 768px) and (max-width: 835px) {
+  /* 轮播图高度 */
+  .roll-img {
+    height: 220rpx;
+  }/* 轮播图图片占比 */
+  .roll-view image {
+    height: 70%;
+  }/* 轮播图文字占比 */
+  .roll-view view {
+    height: 30%;
+    font-size: 70%;
+  }/* 点阵文字大小 */
+  .dots {
+    font-size: 70%;
+  }
+}
+/* for 835px or more */
+@media screen and (min-width: 835px) {
+  /* 轮播图高度 */
+  .roll-img {
+    height: 220rpx;
+  }/* 轮播图图片占比 */
+  .roll-view image {
+    height: 75%;
+  }/* 轮播图文字占比 */
+  .roll-view view {
+    height: 25%;
+    font-size: 60%;
+  }/* 点阵文字大小 */
+  .dots {
+    font-size: 65%;
+  }/* 点阵中点的宽度 */
+  .dot {
+    width: 10%;
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/video/video",
+    "pages/variety/variety",
+    "pages/sort/sort",
+    "pages/interact/interact",
+    "pages/logs/logs",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "FirstAid",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/homeSelected.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "icons/sort.png",
+        "selectedIconPath": "icons/sortSelected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "icons/myself.png",
+        "selectedIconPath": "icons/myselfSelected.png"
+      }
+    ]
+  }
+}

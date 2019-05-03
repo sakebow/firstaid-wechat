@@ -1,0 +1,211 @@
+/* 重写header添加新样式 */
+
+.header {
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* 简略信息 */
+
+.brief-info-container {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.brief-info-img image {
+  width: 100%;
+  border-style: solid;
+  border-width: 1rpx;
+}
+
+/* 视频的文字信息 */
+
+.brief-info-word {
+  width: 60%;
+  text-align: center;
+}
+
+.brief-info-word-title {
+  width: 100%;
+  font-size: 105%;
+}
+
+.brief-info-word-table {
+  width: 100%;
+  font-size: 87%;
+}
+
+.brief-info-word-table-column {
+  display: table-cell;
+}
+/* 图片的高斯模糊 */
+.bur-image-area {
+  z-index: -1;
+  width: 100%;
+  filter: blur(15rpx);
+  -webkit-filter: blur(15rpx);
+  transform: scale(2);
+  -webkit-transform: scale(2);
+}
+
+.bur-image-area image {
+  width: 100%;
+  height: 300rpx;
+}
+
+/* 视频简介 */
+.detail-container {
+  width: 100%;
+}
+
+/* 简介标识 */
+.classify {
+  width: 20%;
+  padding: 5rpx 20rpx;
+  text-align: center;
+  border-top-right-radius: 35rpx;
+  border-bottom-right-radius: 35rpx;
+  margin: 20rpx 0;
+  border-width: 1rpx;
+  border-style: solid;
+  border-left: 0;
+}
+
+/* 简介详情 */
+.detail-info-content {
+  width: 90%;
+  margin: 0 auto;
+  text-indent: 40rpx;
+  padding: 20rpx 0;
+}
+
+/* 操作按钮集合 */
+.btn-group {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+/* 操作按钮 */
+.operation-btn {
+  width: 25%;
+  text-align: center;
+  border-style: solid;
+  border-width: 1rpx;
+  border-radius: 10rpx;
+  padding: 5rpx 0;
+}
+
+.jump-btn {
+  text-align: center;
+  border-style: solid;
+  border-width: 3rpx;
+  border-radius: 10rpx;
+}
+
+@media screen and (max-width: 320px) {
+  .header view {
+    padding: 0 1.6%;
+  }/* 视频的截图信息 */
+
+  .brief-info-img {
+    width: 31%;
+    padding: 2%;
+  }/* 视频的简略信息列表 */
+
+  .brief-info-word-table {
+    display: table;
+    padding: 2.5%;
+  }
+
+  .brief-info-word-table-row {
+    display: table-row;
+    width: 95%;
+  }/* 视频的文字信息 */
+
+  .brief-info-word {
+    padding: 2% 0.5%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header view {
+    padding: 1.2% 1.2%;
+  }/* 视频的截图信息 */
+
+  .brief-info-img {
+    width: 31.8%;
+    padding: 1.6%;
+  }/* 视频的简略信息列表 */
+
+  .brief-info-word-table {
+    display: table;
+    padding: 2%;
+  }
+
+  .brief-info-word-table-row {
+    display: table-row;
+    width: 96%;
+  }/* 视频的文字信息 */
+
+  .brief-info-word {
+    padding: 1.5% 0.5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 835px) {
+  .header view {
+    padding: 0.8% 0.8%;
+  }/* 视频的截图信息 */
+
+  .brief-info-img {
+    width: 31.6%;
+    padding: 1.2%;
+  }/* 视频的简略信息列表 */
+
+  .brief-info-word-table {
+    display: table;
+    padding: 1.5%;
+  }
+
+  .brief-info-word-table-row {
+    display: table-row;
+    width: 97%;
+  }/* 视频的文字信息 */
+
+  .brief-info-word {
+    padding: 1% 0.5%;
+  }
+}
+
+@media screen and (min-width: 835px) {
+  .header view {
+    padding: 0.4% 0.4%;
+  }/* 视频的截图信息 */
+
+  .brief-info-img {
+    width: 33.4%;
+    padding: 0.8%;
+  }/* 视频的简略信息列表 */
+
+  .brief-info-word-table {
+    display: table;
+    padding: 1%;
+  }
+
+  .brief-info-word-table-row {
+    display: table-row;
+    width: 98%;
+  }/* 视频的文字信息 */
+
+  .brief-info-word {
+    padding: 0.5% 0.5%;
+  }
+}

@@ -1,0 +1,13 @@
+<view class='container'>
+<!--头像部分-->
+  <view class='image-frame'>
+    <view class='image' style='border-color: {{btnColor}}'>
+      <image src='{{userIcon}}' mode='widthFix' open-type='getUserInfo' bindtap='getUserPermission'></image>
+    </view>
+    <view>{{userName}}</view>
+  </view>
+  <!--更换主题-->
+  <view class='columns'>
+    <view class='column' style='border-color: {{btnColor}}; color: {{btnColor}};' bindtap='changeThemeAlert'>更换主题</view>
+  </view>
+</view>

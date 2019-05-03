@@ -1,0 +1,78 @@
+.image-frame {
+  width: 100%;
+  text-align: center;
+}
+/* 头像部分 */
+.image {
+  width: 40%;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 5rpx;
+}
+.image image {
+  width: 100%;
+}
+.columns {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.column {
+  width: 25%;
+  border-width: 1rpx;
+  border-style: solid;
+  border-radius: 10rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 110%
+}
+.not-last {
+  border-bottom: solid 2rpx rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 320px) {
+  .image, .columns {
+    margin-top: 20rpx;
+  }
+  .column {
+    padding: 2% 2%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .image, .columns {
+    margin-top: 18rpx;
+  }
+  .column {
+    padding: 1.6% 2.4%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 835px) {
+  .image, .columns {
+    margin-top: 16rpx;
+  }
+  .column {
+    padding: 1.2% 2.8%;
+  }
+}
+
+@media screen and (min-width: 835px) {
+  .image, .columns {
+    margin-top: 14rpx;
+  }
+  .column {
+    padding: 0.8% 3.2%;
+  }
+}
+.container {
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

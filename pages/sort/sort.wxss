@@ -1,0 +1,72 @@
+/* 轮播图下方的四个图片按钮 */
+.nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.nav-item {
+  width: 25%;
+  margin-top: 20px;
+  font-size: 12px;
+}
+/* 分隔符 */
+.hr {
+  height: 15px;
+  background-color: #ccc;
+  opacity: 0.2;
+  margin-top: 15px;
+}
+/* 急救头条 */
+.head {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: 13px;
+  color: #999;
+}
+/* 右箭头，即查看更多按钮 */
+.right {
+  position: absolute;
+  right: 10px;
+  color: #ccc;
+}
+/* 分隔符 */
+.hr2 {
+  height: 2px;
+  background-color: #ccc;
+  opacity: 0.2;
+}
+/* 头条内容 */
+.item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.desc {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999;
+}
+
+.browse {
+  position: absolute;
+  right: 70px;
+}
+
+.comment {
+  position: absolute;
+  right: 10px;
+}

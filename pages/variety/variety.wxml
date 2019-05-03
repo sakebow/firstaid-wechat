@@ -1,0 +1,19 @@
+<!--container，没有header-->
+<view class='container' wx:for='{{variety}}' wx:key='item' wx:for-index='varietyIndex'>
+  <!--使用循环一一呈现-->
+  <view class='intro'>
+    <!--标题栏，也是作为分隔符-->
+    <view class='classify' style='background-color: {{bgColor}}; color: {{fontColor}}'>{{item.name}}</view>
+    <!--查看更多-->
+    <view class='more'>查看更多{{'>'}}</view>
+  </view>
+  <!--横滑查看所有视频（仿豆瓣小程序）-->
+  <view class='frames'>
+    <scroll-view scroll-x class='scroll-area'>
+      <view wx:for="{{item.video}}" wx:for-item="cell" wx:key="cell" wx:for-index='cellIndex' data-id='{{cell.id}}' data-type='{{item.type}}' class='frame-columns' bindtap='jumpToVideo'>
+        <image src='{{cell.imageUrl}}' mode='widthFix'></image>
+        <view>{{cell.title}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

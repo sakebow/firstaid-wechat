@@ -1,0 +1,59 @@
+<!--container，没有header-->
+<view class='container'>
+  <!--高斯模糊上面的显示-->
+  <view class='playing' style='color: {{fontColor}}'><text>正在播放...</text></view>
+  <!--高斯模糊图片（仿豆瓣小程序）-->
+  <view class='bur-image-area'>
+    <image src='{{video.imageUrl}}'></image>
+  </view>
+  <!--简介-->
+  <view class='brief-info-container'>
+    <!--左边是图像-->
+    <view class='brief-info-img'>
+      <image src='{{video.imageUrl}}' mode='widthFix' style='border-color: {{bgColor == "#ffffff" ? "#000000" : bgColor}}'></image>
+    </view>
+    <!--右边是文字介绍-->
+    <view class='brief-info-word'>
+      <view class='brief-info-word-title'>{{video.title}}</view>
+      <view class='brief-info-word-table'>
+        <view class='brief-info-word-table-row'>
+          <view class='brief-info-word-table-column'>简介：</view>
+          <view class='brief-info-word-table-column'>
+            <text>{{video.breif}}</text>
+          </view>
+        </view>
+        <view class='brief-info-word-table-row'>
+          <view class='brief-info-word-table-column'>难度：</view>
+          <view class='brief-info-word-table-column'>
+            <!--用循环输出难度等级（⭐是微软自带的输入法中含有的）-->
+            <text wx:for='{{video.difficulty}}' wx:key='item'>⭐</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='detail-container'>
+  <!--板块标签-->
+  <view class='classify' style='background-color: {{bgColor}};color: {{fontColor}};border-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}}'>压力数据</view>
+  <!--数据模拟区（以后可能会更改）-->
+  <view class='btn-group'>
+    <view class='operation-btn' style='border-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}};color: {{bgColor == "#ffffff" ? fontCOlor : bgColor}}' bindtap='popSimulationData'>{{word}}</view>
+    <view class='operation-btn' style='border-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}};color: {{bgColor == "#ffffff" ? fontCOlor : bgColor}}' bindtap='stopPopUpData'>结束模拟</view>
+  </view>
+  <view class='btn-group'>
+    <view class='data-btn' style='border-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}};color: {{bgColor == "#ffffff" ? fontCOlor : bgColor}}' bindtap='popSimulationData'>
+      <view>体温</view>
+      <view>{{simulation.temper}}</view>
+    </view>
+    <view class='data-btn' style='border-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}};color: {{bgColor == "#ffffff" ? fontCOlor : bgColor}}' bindtap='stopPopUpData'>
+      <view>心率</view>
+      <view>{{simulation.heart}}</view>
+    </view>
+  </view>
+  <!--如果出现了错误数据，出现提示-->
+  <view class='btn-group'>
+    <view class='alert-btn' style='color: {{bgColor == "#ffffff" ? fontCOlor : bgColor}}'>{{simulation.error > errorRate ? "⚠" : ""}}</view>
+    <view class='alert-btn' style='color: {{bgColor == "#ffffff" ? fontCOlor : bgColor}}'>{{simulation.error > errorRate ? "⚠" : ""}}</view>
+  </view>
+</view>

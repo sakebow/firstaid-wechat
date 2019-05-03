@@ -1,0 +1,52 @@
+<!--header-->
+<view class='header' style='background-color: {{bgColor}};'>
+  <view class='header-search' style='border-color: {{bgColor == "#ffffff" ? "#000000" : bgColor}}'>
+    <view class='header-search-input'>
+      <input type='text' />
+    </view>
+    <view class='header-search-button'>
+      <icon type='search' />
+    </view>
+  </view>
+</view>
+<!--container-->
+<view class='container'>
+  <view class='swiper-container'>
+    <!--自动轮播图，仅展示图片-->
+    <swiper class='roll-img' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular="{{circular}}" current="{{currentSwiperIndex}}" bindanimationfinish='rollSwicth'>
+      <block wx:for="{{imgUrls}}" wx:key='item'>
+        <swiper-item>
+          <view class='roll-view'>
+            <image src='{{item.url}}' mode='widthFill' />
+            <view>{{item.description}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!--轮播图的自定义索引点-->
+    <view class='dots'>
+      <view class='dot {{currentSwiperIndex == 0 ? "show" : ""}}' data-index="0" bindtap='tapSwitch'>1</view>
+      <view class='dot {{currentSwiperIndex == 1 ? "show" : ""}}' data-index="1" bindtap='tapSwitch'>2</view>
+      <view class='dot {{currentSwiperIndex == 2 ? "show" : ""}}' data-index="2" bindtap='tapSwitch'>3</view>
+    </view>
+  </view>
+  <view>
+    <view class='tab'>
+      <!--手动轮播的自定义轮播点-->
+      <view class='{{tabIndex == 0 ? "tab-border" : ""}}' bindtap='tabSwitch' data-current="0" style='color:{{tabIndex == 0 ? "bgColor" : ""}};border-bottom-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}}'>擦伤急救</view>
+      <view class='{{tabIndex == 1 ? "tab-border" : ""}}' bindtap='tabSwitch' data-current="1" style='color:{{tabIndex == 0 ? "bgColor" : ""}};border-bottom-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}}'>扭伤急救</view>
+      <view class='{{tabIndex == 2 ? "tab-border" : ""}}' bindtap='tabSwitch' data-current="2" style='color:{{tabIndex == 0 ? "bgColor" : ""}};border-bottom-color:{{bgColor == "#ffffff" ? "#000000" : bgColor}}'>骨折急救</view>
+    </view>
+    <!--手动轮播图，展示图片和文字-->
+    <swiper current='{{tabIndex}}' bindanimationfinish='scrollSwitch'>
+      <swiper-item wx:for='{{scrollViewImgs}}' wx:key='item'>
+        <view class='slide-view'>
+          <image src='{{item.url}}' mode='widthFix'></image>
+          <view class='slide-view-info'>
+            {{item.description}}
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

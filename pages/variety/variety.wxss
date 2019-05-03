@@ -1,0 +1,48 @@
+/* 分类栏 */
+
+.intro {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 分类 */
+.classify {
+  width: 20%;
+  padding: 10rpx;
+  border-top-right-radius: 35rpx;
+  border-bottom-right-radius: 35rpx;
+  text-align: center;
+  margin: 30rpx 0;
+}
+/* 查看更多 */
+.more {
+  padding: 10rpx;
+  margin: 30rpx 0;
+}
+/* 左滑动外框 */
+.frames {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 15rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 滑动区 */
+.scroll-area {
+  width: auto;
+  overflow: hidden;
+}
+/* 滑动区内滑块 */
+.frame-columns {
+  padding: 1% 3%;
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+}
+/* 滑块内图片 */
+.frame-columns image {
+  width: 100%;
+}
