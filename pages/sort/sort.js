@@ -15,29 +15,29 @@ Page({
      * imgUrls 将传给前端的swiper展示轮播图
      */
     imgUrls: [
-      "../../images/kagura.jpg",
-      "../../images/bronya_in_kimono.jpg",
-      "../../images/kagura.jpg",
-      "../../images/bronya_in_kimono.jpg"
+      "http://39.96.221.155/images/溺水急救.jpg",
+      "http://39.96.221.155/images/触电急救.jpg",
+      "http://39.96.221.155/images/老人异物阻塞急救.jpg",
+      "http://39.96.221.155/images/骨折紧急处理.jpeg"
     ],
     /**
      * navs是轮播图下方的四个图片按钮的图片链接
      */
     navs:[
       {
-        url: '../../images/youyoukousama.jpg',
+        url: 'http://39.96.221.155/icons/needle.png',
         description: '全部'
       },
       {
-        url: '../../images/youyoukousama.jpg',
+        url: 'http://39.96.221.155/icons/heart.png',
         description: '心脏复苏'
       },
       {
-        url: '../../images/youyoukousama.jpg',
+        url: 'http://39.96.221.155/icons/brokenhands.png',
         description: '包扎'
       },
       {
-        url: '../../images/youyoukousama.jpg',
+        url: 'http://39.96.221.155/icons/broken.png',
         description: '骨折'
       }
     ],
@@ -46,21 +46,21 @@ Page({
      */
     array:[
       {
-        url: '../../images/kagura.jpg',
+        url: 'http://39.96.221.155/images/心肺按压.jpg',
         title: '心肺按压',
         type : '心肺复苏',
         browse : '19585浏览',
         comment : '7评论'
       },
       {
-        url: '../../images/bronya_in_kimono.jpg',
+        url: 'http://39.96.221.155/images/骨折急救.jpg',
         title : '骨折固定',
         type : '骨折',
         browse : '5688浏览',
         comment : '13评论'
       },
       {
-        url: '../../images/kagura.jpg',
+        url: 'http://39.96.221.155/images/人工呼吸.jpg',
         title : '人工呼吸',
         type : '心肺复苏',
         browse : '3965浏览',

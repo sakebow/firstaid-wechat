@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/video/video",
+    "pages/interact/interact",
+    "pages/index/index",
     "pages/variety/variety",
     "pages/sort/sort",
-    "pages/interact/interact",
-    "pages/logs/logs",
-    "pages/index/index"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,5 +34,6 @@
         "selectedIconPath": "icons/myselfSelected.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

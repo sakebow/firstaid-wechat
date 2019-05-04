@@ -13,7 +13,7 @@
   <view class="content"> 
     <view class="nav">
       <view class='nav-item' wx:for="{{navs}}" wx:for-index="index" wx:key="item">
-        <view><image src='{{item.url}}' style='width:28px;height:26px;' data-index='{{index}}' bindtap='jumpLink'></image></view>
+        <view><image src='{{item.url}}' style='width: 45px;height: 40px' data-index='{{index}}' bindtap='jumpLink'></image></view>
         <view>{{item.description}}</view>
       </view>
     </view>

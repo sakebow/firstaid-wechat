@@ -16,7 +16,7 @@ Page({
       difficulty: 7,
       title: '最大难度急救',
       description: '在呼吸停止、大量出血、心跳微弱、失去意识的情况下进行急救',
-      imageUrl: '../../images/kagura.jpg',
+      imageUrl: 'http://39.96.221.155/images/救护车.png',
       breif: '呼吸停止、大量出血等'
     }
   },

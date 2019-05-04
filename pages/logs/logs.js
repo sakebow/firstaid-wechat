@@ -6,7 +6,7 @@ Page({
    */
   data: {
     userName: '请点击头像授权登录',
-    userIcon: '../../images/kagura.jpg',
+    userIcon: 'http://39.96.221.155/icons/headpic.png',
     btnColor: '#87cefa'
   },
   // 获得登录权限

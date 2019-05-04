@@ -15,13 +15,13 @@ Page({
      */
     imgUrls : [
       {
-        url: '../../images/bronya_in_kimono.jpg',
+        url: 'http://39.96.221.155/images/催吐.jpg',
         description: '催吐'
       }, {
-        url: '../../images/bronya_in_kimono.jpg',
+        url: 'http://39.96.221.155/images/骨折急救.jpeg',
         description: '骨折'
       }, {
-        url:'../../images/bronya_in_kimono.jpg',
+        url:'http://39.96.221.155/images/人工呼吸.jpg',
         description: '人工呼吸'
       }
     ],
@@ -30,15 +30,15 @@ Page({
      */
     scrollViewImgs : [
       {
-        url: '../../images/kagura.jpg',
+        url: 'http://39.96.221.155/images/擦伤急救.jpg',
         description: '发现擦伤时，需用碘液杀菌，再用纱布包裹防止感染'
       },
       {
-        url: '../../images/kagura.jpg',
+        url: 'http://39.96.221.155/images/暂无图片.jpg',
         description: '发现扭伤时，切记胡乱走动，让脚踝充分的休息，建议立即在医生的指导下进行恢复操作'
       },
       {
-        url: '../../images/kagura.jpg',
+        url: 'http://39.96.221.155/images/骨折急救.jpg',
         description: '发现骨折时，应立即打电话寻求医疗帮助'
       }
     ],
